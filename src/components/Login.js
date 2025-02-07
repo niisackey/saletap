@@ -28,7 +28,8 @@ const Login = () => {
       saveToken(access_token);
       saveRole(role);
 
-      if (role === "Store Owner") {
+      // Changed from "Store Owner" to "Admin"
+      if (role === "Admin") {
         navigate("/dashboard");
       } else {
         setError("Unauthorized: You do not have access to this application.");
